@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
 
-  <title>Frontend Mentor | Order summary card</title>
+  <title>Order summary card</title>
 
 
 </head>
@@ -21,24 +21,35 @@
 
   <main class="container">
 
-    <h1 class="heading-primary"> Order Summary </h1>
+    <img src="images/illustration-hero.svg" class="hero-img" alt="dancing with headphone on">
 
-    <p class="about-text">You can now listen to millions of songs, audiobooks, and podcasts on any
+    <h1 class="heading-primary ma-rl-2"> Order Summary </h1>
+
+    <p class="about-text ma-rl-2">You can now listen to millions of songs, audiobooks, and podcasts on any
       device anywhere you like!</p>
 
-    Annual Plan
-    $59.99/year
+    <div class="plan ma-rl-2">
 
-    Change
+      <img src="images/icon-music.svg" alt="music icon" class="plan-icon">
 
-    Proceed to Payment
-    Cancel Order
-
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+      <div class="plan-type"> <span class="plan-duration"> Annual Plan </span>
+        $59.99/year
+      </div>
+      <a class="plan-change">Change</a>
     </div>
+
+    <a href="" class="btn plan-payment ma-rl-2"> Proceed to Payment </a>
+
+    <a href="" class="btnplan-cancel ma-rl-2"> Cancel Order</a>
+
   </main>
+
+  <footer class="footer">
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
+
+
+
 </body>
 
 </html>
