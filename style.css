@@ -92,6 +92,7 @@ h4 {
   --ma-b-1: 1rem;
   --ma-b-1_5: 1.5rem;
   --ma-b-2: 2rem;
+  --ma-b-3: 3rem;
   --ma-r-1: 1rem;
 
   /* Padding */
@@ -122,6 +123,12 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media (min-width: 37.5rem) {
+    background: url(images/pattern-background-desktop.svg), var(--bg-color);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 
 .container {
@@ -140,6 +147,10 @@ body {
 .hero-img {
   width: 100%;
   margin-bottom: 2rem;
+
+  @media (min-width: 37.5rem) {
+    margin-bottom: var(--ma-b-3);
+  }
 }
 
 .heading-primary {
@@ -148,6 +159,10 @@ body {
   color: var(--heading-black);
   margin-bottom: var(--ma-b-1);
   text-align: center;
+
+  @media (min-width: 37.5rem) {
+    font-size: 1.75rem;
+  }
 }
 
 .about-text {
@@ -167,6 +182,10 @@ body {
   font-size: 0.875rem;
   font-weight: 500;
   margin-bottom: var(--ma-b-1_5);
+
+  @media (min-width: 37.5rem) {
+    font-size: 1.75rem;
+  }
 }
 
 .plan-icon {
@@ -182,6 +201,11 @@ body {
   font-weight: 900;
 }
 
+.plan-wrapper {
+  @media (min-width: 37.5rem) {
+    font-size: 1rem;
+  }
+}
 .plan-type {
   margin-right: auto;
 }
