@@ -1,0 +1,225 @@
+/* ----------------------------------------- */
+/* CSS Reset */
+/* ----------------------------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* ----------------------------------------- */
+/* Custom properties */
+/* ----------------------------------------- */
+
+:root {
+  /* colors */
+
+  --heading-black: #1f2e55;
+  --text-grey: #717fa6;
+  --text-black: #1f2e55;
+  --text-blue: #382ae1;
+  --text-white: #fff;
+  --bg-color: #e0e8ff;
+  --bg-color-secondary: #f7f9ff;
+
+  /* margins */
+
+  --ma-b-1: 1rem;
+  --ma-b-1_5: 1.5rem;
+  --ma-b-2: 2rem;
+  --ma-r-1: 1rem;
+
+  /* Padding */
+
+  --pa-tb-1: 1rem 0;
+  --pa-l-1: 1rem;
+}
+
+/* ----------------------------------------- */
+/* Utility classes */
+/* ----------------------------------------- */
+
+.ma-rl-2 {
+  margin: 0 2rem;
+}
+
+/* ----------------------------------------- */
+/* General Style */
+/* ----------------------------------------- */
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1rem;
+  background: url(images/pattern-background-mobile.svg), var(--bg-color);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  margin: 0 1.5rem;
+  margin-top: 4.4rem;
+  background-color: white;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.15);
+  width: min(90%, 28.125rem);
+
+  @media (min-width: 37.5rem) {
+  }
+}
+
+.hero-img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.heading-primary {
+  font-size: 1.375rem;
+  font-weight: 900;
+  color: var(--heading-black);
+  margin-bottom: var(--ma-b-1);
+  text-align: center;
+}
+
+.about-text {
+  color: var(--text-grey);
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: var(--ma-b-1_5);
+}
+
+.plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-color-secondary);
+  border-radius: 0.6875rem;
+  color: var(--text-grey);
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: var(--ma-b-1_5);
+}
+
+.plan-icon {
+  width: 4rem;
+  margin-right: 1.25rem;
+  padding: var(--pa-tb-1);
+  padding-left: var(--pa-l-1);
+}
+
+.plan-duration {
+  color: var(--text-black);
+  font-size: 0.875rem;
+  font-weight: 900;
+}
+
+.plan-type {
+  margin-right: auto;
+}
+
+.plan-change {
+  color: var(--text-blue);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  margin-right: var(--ma-r-1);
+  text-decoration: underline;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plan-payment {
+  background-color: var(--text-blue);
+  color: var(--text-white);
+  text-align: center;
+  padding: var(--pa-tb-1);
+  border-radius: 0.6785rem;
+  box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.19);
+  font-weight: 900;
+  text-decoration: none;
+  margin-bottom: var(--ma-b-1_5);
+}
+
+.plan-cancel {
+  text-align: center;
+  color: var(--text-grey);
+  font-weight: 900;
+  text-decoration: none;
+  margin-bottom: var(--ma-b-2);
+}
+
+.footer {
+  margin-top: auto;
+}
