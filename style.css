@@ -133,6 +133,15 @@ body {
   }
 }
 
+a:hover,
+a:active {
+  cursor: pointer;
+}
+
+footer > a {
+  color: black;
+}
+
 .container {
   margin: 0 1.5rem;
   margin-top: 4.4rem;
