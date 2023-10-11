@@ -188,6 +188,8 @@ footer > a {
   margin-bottom: var(--ma-b-1_5);
 
   @media (min-width: 37.5rem) {
+    
+line-height: 1.625rem;
     margin: var(--mar-rl-3);
     margin-bottom: var(--ma-b-1_5);
   }
